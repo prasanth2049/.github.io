@@ -1,6 +1,6 @@
 
 function validation() {
-    var a = document.form["form"]["title"].value;
+    var a = document.forms["form"]["title"].value;
 	if(a=="") {
 		alert("Title is Required.");
 		return false;
@@ -11,22 +11,22 @@ function validation() {
         return false;
     }
 	  
-    var b = document.form["form"]["Price"].value;
+    var b = document.forms["form"]["price"].value;
     if(b=="") {
         alert("Price is Required.");
         return false;
     }
-    if(/[^0-9/]/.test(a)) {
+    if(/[^0-9/]/.test(b)) {
         alert("Price has to be a number.");
         return false;
     }
-    var a = document.form["form"]["dateOfLaunch"].value;
-    if(a=="") {
+    var c = document.forms["form"]["dateOfLaunch"].value;
+    if(c=="") {
         alert("Date of Launch is required.");
         return false;
     }
-    var a = document.form["form"]["Category"].value;
-    if(a=="") {
+    var d = document.forms["form"]["Category"].value;
+    if(d=="") {
         alert("Category is required.");
         return false;
     }
