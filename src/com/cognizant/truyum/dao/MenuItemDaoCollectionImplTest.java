@@ -42,8 +42,7 @@ public class MenuItemDaoCollectionImplTest {
 	private static void testModifyMenuItem() throws ParseException {
 
 		MenuItemDao menuItemDao = new MenuItemDaoCollectionImpl();
-		MenuItem menuItem = new MenuItem(1, "Fried Rice", 52.00f, true, DateUtil.convertToDate("15/03/2017"),
-				"FastFood", true);
+		MenuItem menuItem = new MenuItem(1, "Briyani", 52.00f, true, DateUtil.convertToDate("15/03/2017"),"special", true);
 		menuItemDao.modifyMenuItem(menuItem);
 
 	}
